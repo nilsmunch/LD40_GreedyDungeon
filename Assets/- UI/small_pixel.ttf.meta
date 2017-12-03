@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6fe21b89689795846aeef34d7ccfe39d
+timeCreated: 1512236889
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Small Pixel
+  fontNames:
+  - Small Pixel
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

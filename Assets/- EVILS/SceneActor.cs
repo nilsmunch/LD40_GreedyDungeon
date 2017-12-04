@@ -43,7 +43,9 @@ public class SceneActor : MonoBehaviour {
 	
 	// Update is called once per frame
 	static public void resetPosition () {
-        foreach (SceneActor sc in all) {
+        foreach (SceneActor sc in all)
+        {
+            if (sc == null) continue;
             if (sc.gameObject == null) continue;
             sc.resetToNormal();
         }

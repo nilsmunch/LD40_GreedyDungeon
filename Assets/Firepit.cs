@@ -33,6 +33,10 @@ public class Firepit : MonoBehaviour
             {
                 other.gameObject.GetComponent<BarrelDoodad>().Death();
             }
+            if (other.GetComponent<PlayerHunter>() != null)
+            {
+                other.gameObject.GetComponent<BarrelDoodad>().Death();
+            }
             return;
         }
     }

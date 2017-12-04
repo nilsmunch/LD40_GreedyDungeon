@@ -12,6 +12,8 @@ public class Gargoyle : SceneActor
     Vector2 direction;
     SpriteRenderer mySprite;
 
+    public bool immuneDiesOnCollissionWithSelf = false;
+
     float attackCooldown = 0f;
 
     float Charge = 0f;
@@ -29,6 +31,7 @@ public class Gargoyle : SceneActor
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!immuneDiesOnCollissionWithSelf) return;
         if (!charging) return;
         if (collision.gameObject.GetComponent<Gargoyle>() != null)
         {
@@ -55,6 +58,7 @@ public class Gargoyle : SceneActor
         if (charging) {
 
             Charge -= Time.deltaTime;
+            mySprite.sprite = hunting;
 
             if (Charge >= 0.6f)
             {
@@ -82,7 +86,6 @@ public class Gargoyle : SceneActor
                 charging = false;
                 gameObject.layer = LayerMask.NameToLayer("Movable");
             }
-            mySprite.sprite = hunting;
             return;
         }
         mySprite.sprite = sleeping;

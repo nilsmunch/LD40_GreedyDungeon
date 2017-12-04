@@ -83,6 +83,9 @@ public class PlayerCharacterWalking : SceneActor
 
     void Start()
     {
+#if UNITY_EDITOR
+      coins = 20;
+#endif
         addToActorList();
         Application.targetFrameRate = 60;
         playerToonScript = this;
@@ -101,7 +104,9 @@ public class PlayerCharacterWalking : SceneActor
 
     private void Update()
     {
+        if (PlayerCharacterWalking.playerToon == null) return;
         if (ExitStairs.gamePaused) return;
+        if (dead) return;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("Lobby");

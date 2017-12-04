@@ -10,7 +10,7 @@ public class HighscoreManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        coinScore.text = PlayerCharacterWalking.coins.ToString() + " coins out of 24";
+        coinScore.text = PlayerCharacterWalking.coins.ToString() + " coins out of 26";
     }
 
     public void Replay() {
@@ -21,6 +21,12 @@ public class HighscoreManager : MonoBehaviour {
     {
         SceneManager.LoadScene("Background");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 
 
     public void ExitToMainMenu()

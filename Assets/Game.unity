@@ -57807,7 +57807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec53a02640c2ab49b73ecf97250d04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackThis: {fileID: 1614300993}
+  trackThis: {fileID: 1679905516}
 --- !u!1 &1062920311
 GameObject:
   m_ObjectHideFlags: 0
@@ -60208,7 +60208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!58 &1614300994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60758,7 +60758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1679905517
 SpriteRenderer:
   m_ObjectHideFlags: 0
